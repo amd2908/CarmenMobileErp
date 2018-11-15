@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">CarmenMobileErp</string>
+
+
+    <string name="requiredFieldInfo">Pole jest wymagane</string>
+    <string name="notValidInfo">Nieprawidłowy format adresu e-mail</string>
+    <string name="create_account">Tworzenie konta</string>
+
+    <string name="title_activity_carmen_main">CarmenAccountant</string>
+    <string name="title_activity_carmen_register">Rejestracja</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">UStawienia</string>
+    <string name="name">Imie</string>
+    <string name="profit">Pensja</string>
+    <string name="actualState">Aktualne saldo</string>
+    <string name="email">E-mail</string>
+    <string name="active">Aktywność</string>
+    <string name="login">Login</string>
+    <string name="p_ssword">Hasło</string>
+    <string name="notExistUserMsg">Użytkownik o podanych danych nie istnieje w bazie.</string>
+    <string name="ok">OK</string>
+    <string name="desc_menu_item">menu item</string>
+    <string name="operationHeader">Operacje:</string>
+    <string name="operationsMenu">Operacje</string>
+    <string name="planningMenu">Planowanie</string>
+    <string name="debtsMenu">Długi</string>
+    <string name="walletMenu">Portfel</string>
+    <string name="reportsMenu">Raporty</string>
+    <string name="historyMenu">Historia</string>
+    <string name="importExportMenu">Import / Eksport</string>
+    <string name="categoriesMenu">Kategorie</string>
+    <string name="userMenu">Użytkownik</string>
+    <string name="notActiveUserMsg">Podany użytkownik nie jest aktywny. Przez zalogowanie konieczna aktywacja.</string>
+    <string name="addUserSuccessMsg">Użytkownik został dodany.</string>
+    <string name="addOperationSuccessMsg">Operacja została dodana</string>
+    <string name="editOperationSuccessMsg">Operacja została zaktualizowana</string>
+    <string name="addUserErrorMsg">Użytkownik nie został dodany. Wystąpił błąd: </string>
+    <string name="attentionHeader">Uwaga</string>
+    <string name="okInfo">OK</string>
+    <string name="title_activity_carmen_operations">Operacje</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search_hint">Wpisz nazwę...</string>
+    <string name="action_search">Filtrowanie</string>
+    <string name="action_filter_type">Rodzaj filtra</string>
+    <string name="title_activity_carmen_add_expense">Dodawanie nowej operacji</string>
+    <string name="remplatesMenu">Szablony</string>
+    <string name="operation_title">Tytuł operacji</string>
+    <string name="category_name">Nazwa kategorii</string>
+    <string name="wydatek">Wydatek</string>
+    <string name="wplyw">Wpływ</string>
+    <string name="add_operation_date">Wprowadź datę operacji</string>
+    <string name="constOperation">Zlecenie stałe</string>
+    <string name="planOperation">Planowana operacja</string>
+    <string name="titleExpense">Wprowadź tytuł</string>
+    <string name="expense_header">Wydatek</string>
+    <string name="impact_header">Wpływ</string>
+    <string name="expense_date_header">Wybierz datę</string>
+    <string name="const_operation">Zlecenie stałe</string>
+    <string name="plan_operation">Operacja planowana</string>
+    <string name="chooseCategoryText">Wybierz kategorię</string>
+    <string name="newOperation">Nowa operacja</string>
+    <string-array name="categories_content">
+        <item>Wybierz kategorie</item>
+    </string-array>
+    <string name="title_activity_category">Kategorie</string>
+    <string name="addTitleInfo">Wprowadź tytuł:</string>
+    <string name="addAmountInfo">Wprowadź kwotę:</string>
+    <string name="chooseCategory">Wybierz kategorie</string>
+    <string name="saveRegister">Zapisz</string>
+    <string name="password">Hasło</string>
+    <string name="logoText">Rejestracja</string>
+    <string name="title_activity_carmen_category">Kategorie</string>
+    <string name="title_activity_carmen_add_category">Dodawanie nowej kategorii</string>
+    <string name="categorySavedInfo">Kategoria została dodana</string>
+    <string name="invalidAmount">Podana kwota nie może być zerem</string>
+</resources>

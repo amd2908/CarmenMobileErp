@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    tools:context="pk.software.carmenmobileerp.CarmenRegisterActivity"
+    android:background="@color/colorPrimary"
+    tools:showIn="@layout/activity_carmen_register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:text="@string/logoText"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/whiteGray"
+                android:textColorHint="@color/whiteGray"
+                android:layout_marginEnd="40dp"
+                style="EditText.Login"
+                android:paddingRight="8dp"
+                android:fontFamily="@font/robo_light"
+                android:background="#66FFFFFF"
+                android:theme="@style/EditText.Login"
+                android:layout_marginStart="40dp"
+                android:hint="@string/login"
+                />
+
+
+            <EditText
+                android:id="@+id/password"
+                style="EditText.Login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="40dp"
+                android:inputType="textPassword"
+                android:layout_marginStart="40dp"
+                android:background="#66FFFFFF"
+                android:fontFamily="@font/robo_light"
+                android:hint="@string/password"
+                android:layout_marginTop="15dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/whiteGray"
+                android:textColorHint="@color/whiteGray"
+                android:theme="@style/EditText.Login" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:paddingRight="8dp"
+        android:background="#66FFFFFF"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/whiteGray"
+        android:fontFamily="@font/robo_light"
+        style="EditText.Login"
+        android:theme="@style/EditText.Login"
+        android:textColorHint="@color/whiteGray"
+        android:hint="@string/name"
+         />
+
+    <EditText
+        android:id="@+id/profit"
+        android:inputType="numberDecimal"
+        android:hint="@string/profit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:paddingRight="8dp"
+        android:layout_marginStart="40dp"
+        android:background="#66FFFFFF"
+        android:textColor="@color/whiteGray"
+        android:fontFamily="@font/robo_light"
+        style="EditText.Login"
+        android:theme="@style/EditText.Login"
+        android:textColorHint="@color/whiteGray" />
+
+    <EditText
+        android:id="@+id/actualState"
+        android:hint="@string/actualState"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:paddingRight="8dp"
+        android:background="#66FFFFFF"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/whiteGray"
+        android:fontFamily="@font/robo_light"
+        style="EditText.Login"
+        android:theme="@style/EditText.Login"
+        android:textColorHint="@color/whiteGray" />
+
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_carmen_back"
+        android:fontFamily="@font/robo_light"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/saveRegister" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

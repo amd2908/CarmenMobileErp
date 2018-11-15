@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Carmen/Carmen.iml" filepath="$PROJECT_DIR$/Carmen/Carmen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CarmenMobileErp.iml" filepath="$PROJECT_DIR$/CarmenMobileErp.iml" />
+    </modules>
+  </component>
+</project>

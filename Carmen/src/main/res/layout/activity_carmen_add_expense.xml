@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".CarmenAddOperation">
+
+
+    <TextView
+        android:id="@+id/amount_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="6dp"
+        android:textSize="28sp"
+        android:gravity="right"
+        android:textColor="@color/colorPrimary"
+        android:text="0,00 zł"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_height="2dp"
+        app:layout_constraintStart_toStartOf="@+id/amount_operation"
+        app:layout_constraintTop_toBottomOf="@+id/amount_operation"
+        android:background="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/categories_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="Wybór kargorii"
+        android:gravity="right"
+        android:paddingRight="30dp"
+        android:textColorHint="@color/colorPrimary"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        app:layout_constraintStart_toStartOf="@+id/separator"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+    <TextView
+        android:id="@+id/title_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/categories_operation"
+        app:layout_constraintTop_toBottomOf="@+id/categories_operation"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="6dp"
+        android:paddingLeft="10dp"
+        android:gravity="right"
+        android:paddingRight="30dp"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="@string/operation_title" />
+
+    <RadioButton
+        android:id="@+id/substract_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/wydatek"
+        android:paddingLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_operation" />
+
+    <RadioButton
+        android:id="@+id/addition_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:text="@string/wplyw"
+        app:layout_constraintBottom_toBottomOf="@+id/substract_operation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/substract_operation"
+        app:layout_constraintStart_toEndOf="@+id/substract_operation"
+        app:layout_constraintTop_toBottomOf="@+id/title_operation" />
+
+    <TextView
+        android:id="@+id/date_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:gravity="right"
+        android:paddingRight="30dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/addition_operation"
+        app:layout_constraintTop_toBottomOf="@+id/addition_operation"
+        android:hint="@string/add_operation_date"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:paddingLeft="10dp"
+        />
+
+
+    <CheckBox
+        android:id="@+id/const_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:text="@string/constOperation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_operation" />
+
+    <CheckBox
+        android:id="@+id/plan_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:text="@string/planOperation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/const_operation" />
+
+    <Button
+        android:id="@+id/saveOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/colorPrimary"
+        android:text="Zapisz"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plan_operation" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:background="@color/colorPrimary"
+    tools:context="pk.software.carmenmobileerp.CarmenLoginActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_user" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/logo"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white9"
+            android:layout_marginEnd="40dp"
+            style="EditText.Login"
+            android:fontFamily="@font/robo_light"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/EditText.Login"
+            android:layout_marginStart="40dp"
+            android:hint="Login"
+            android:drawableLeft="@drawable/ic_login"
+            />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:maxLength="40"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robo_light"
+            style="EditText.Login"
+            android:theme="@style/EditText.Login"
+            android:textColorHint="@color/white9"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="Hasło"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_carmen_back"
+            android:text="Logowanie"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/robo_light"
+            android:textColor="@color/white" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_carmen_trasnparent"
+        android:drawableRight="@drawable/ic_ic_arrow_left"
+        android:fontFamily="@font/robo_light"
+        android:paddingRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="    Czy posiadasz już konto?     Zarejestruj się"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

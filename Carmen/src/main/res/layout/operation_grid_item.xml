@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/operationTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_title"
+        android:fontFamily="@font/robo_condensed_light"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:maxLines="4"
+        app:layout_constraintHorizontal_weight="2"/>
+
+
+    <TextView
+        android:id="@+id/operationCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/robo_condensed_light"
+        android:text="Kategoria operacji"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/operationAmount"
+        app:layout_constraintStart_toStartOf="@+id/operationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/operationTitle" />
+
+    <TextView
+        android:id="@+id/operationDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/robo_condensed_light"
+        android:text="2018-10-24"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/operationAmount"
+        app:layout_constraintStart_toStartOf="@+id/operationCategory"
+        app:layout_constraintTop_toBottomOf="@+id/operationCategory" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/operationDate"
+        />
+
+    <TextView
+        android:id="@+id/operationAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/robo_condensed_light"
+        android:gravity="right"
+        android:text="64,00 zł"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOptions" />
+
+    <Button
+        android:id="@+id/buttonOptions"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_ic_arrow_left_dark"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:textAppearanceLarge"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

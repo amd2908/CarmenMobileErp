@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mediumRed">#e70000</color>
+    <color name="orange">#f27004</color>
+    <color name="colorPrimary">#2C353E</color>
+    <color name="colorPrimaryDark">#14171C</color>
+    <color name="colorPrimaryBlue">#2C353E</color>
+    <color name="colorAccent">#0c77f0</color>
+    <color name="specialBlue">#0f67c9</color>
+    <color name="colorCheckActive">#87B821</color>
+    <color name="hellGreen">#34dd00</color>
+    <color name="antiFlashWhite">#F2F3F4</color>
+    <color name="antiFlashWhite2">#88F2F3F4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white1">#11FFFFFF</color>
+    <color name="white2">#22FFFFFF</color>
+    <color name="white3">#33FFFFFF</color>
+    <color name="white4">#44FFFFFF</color>
+    <color name="white5">#55FFFFFF</color>
+    <color name="white6">#66FFFFFF</color>
+    <color name="white7">#77FFFFFF</color>
+    <color name="white8">#88FFFFFF</color>
+    <color name="white9">#99FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black1">#11000000</color>
+    <color name="black2">#22000000</color>
+    <color name="black3">#33000000</color>
+    <color name="black4">#44000000</color>
+    <color name="black5">#55000000</color>
+    <color name="black6">#66000000</color>
+    <color name="black7">#77000000</color>
+    <color name="black8">#88000000</color>
+    <color name="black9">#99000000</color>
+    <color name="whiteGray">#F0EFF0</color>
+    <color name="hellBlack">#24150E</color>
+    <color name="hellGray">#e3e1e1</color>
+    <color name="darkRed">#bf0000</color>
+    <color name="softGreen">#04b244</color>
+    <color name="softBlue">#97d2ff</color>
+
+</resources>

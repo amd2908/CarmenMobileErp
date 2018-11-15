@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/imgMenuItemView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.9"
+        android:background="@drawable/menu_action_style"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/txtMenuItemCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.8"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="Small Text"
+        android:fontFamily="@font/robo_condensed_light"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMenuItemView"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>

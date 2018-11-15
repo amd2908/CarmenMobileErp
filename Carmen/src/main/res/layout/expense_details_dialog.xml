@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/antiFlashWhite"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/expenseName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/colorPrimaryBlue"
+        android:textColorHint="@color/colorPrimaryBlue"
+        android:layout_marginEnd="40dp"
+        style="EditText.Login"
+        android:fontFamily="@font/robo_light"
+        android:theme="@style/EditText.Login"
+        android:layout_marginStart="40dp"
+        android:hint="Nazwa wydatku"
+        />
+
+
+    <EditText
+        android:id="@+id/expenseAmount"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/colorPrimaryBlue"
+        android:textColorHint="@color/colorPrimaryBlue"
+        android:fontFamily="@font/robo_light"
+        style="EditText.Login"
+        android:theme="@style/EditText.Login"
+        android:hint="Kwota"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/expenseDate"
+            style="EditText.Login"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:enabled="false"
+            android:fontFamily="@font/robo_light"
+            android:hint="Data"
+            android:textColor="@color/colorPrimaryBlue"
+            android:textColorHint="@color/colorPrimaryBlue"
+            android:layout_weight="3"
+            android:theme="@style/EditText.Login" />
+
+        <ImageView
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_calendar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/expenseCategory"
+            android:hint="Kategoria"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/colorPrimaryBlue"
+            android:textColorHint="@color/colorPrimaryBlue"
+            android:layout_weight="3"
+            android:fontFamily="@font/robo_light"
+            style="EditText.Login"
+            android:theme="@style/EditText.Login" />
+
+        <ImageView
+            android:id="@+id/optionsList"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_options" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".CarmenAddOperation">
+
+    <TextView
+        android:id="@+id/title_category"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:hint="@string/operation_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/substract_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:text="@string/wydatek"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/colorPicker"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <RadioButton
+        android:id="@+id/addition_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:text="@string/wplyw"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/colorPicker"
+        tools:layout_editor_absoluteX="219dp" />
+
+    <TextView
+        android:id="@+id/colorPicker"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:hint="Wybór koloru kategorii"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/title_category"
+        tools:layout_editor_absoluteX="20dp" />
+
+
+    <Button
+        android:id="@+id/saveOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/colorPrimary"
+        android:text="Zapisz"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plan_operation" />
+
+</android.support.constraint.ConstraintLayout>
