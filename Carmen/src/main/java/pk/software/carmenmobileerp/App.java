@@ -16,6 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Piotr Karmiński on 28.01.2018.
  */
 
+//APPPP
 public class App extends Application {
 
     private LoginManager loginManager;
